@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<!--        3)Configure annotations and enable them by XML-->
+        <context:component-scan base-package="ru.neoflex"/>
+<!--    <context:property-placeholder location="classpath:application.properties"/>-->
+<!--    1)Configure context by XML (use p-properties, factory)-->
+<!--    <bean id="myRepositoryImpl"-->
+<!--          class="ru.neoflex.repository.impl.OrderRepositoryImpl"-->
+<!--            factory-method="getInstance">-->
+<!--    </bean>-->
+<!--    <bean id="myOrderServiceImpl"-->
+<!--          class="ru.neoflex.service.impl.OrderServiceImpl">-->
+<!--        <constructor-arg ref="myRepositoryImpl"/>-->
+<!--        <property name="standardSum" value="${default.price}"/>-->
+<!--    </bean>-->
+<!--    2)Configure autowiring by XML-->
+<!--    <bean id="myRepositoryImpl1"-->
+<!--          class="ru.neoflex.repository.impl.OrderRepositoryImpl">-->
+<!--    </bean>-->
+<!--    <bean id="myOrderServiceImpl1"-->
+<!--          class="ru.neoflex.service.impl.OrderServiceImpl"-->
+<!--    autowire="constructor">-->
+<!--        <property name="standardSum" value="${default.price}"/>-->
+<!--    </bean>-->
+</beans>
